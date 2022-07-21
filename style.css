@@ -20,8 +20,17 @@ body{
 
 /* Section one  */
 .landingPageSection{
-    background:var(--colo1r-button);
+    
     height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .landingPageSectionHeader{
     border-bottom: 2px solid goldenrod ;
