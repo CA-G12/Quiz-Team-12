@@ -28,8 +28,9 @@ function createRev(result) {
 createRev(result)
 
 exitBtn.addEventListener('click', () => {
-  localStorage.removeItem('locName')
-  localStorage.removeItem('scoreAnswer')
-  localStorage.removeItem('result')
+  localStorage.setItem('locName', JSON.stringify(''))
+  localStorage.setItem('scoreAnswer', JSON.stringify('0'))
+  localStorage.setItem('result', JSON.stringify([]))
+
   window.location = '../index.html'
 })
