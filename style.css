@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --body-color: #fff;
+    --main-color: #1A374D;
+    --secondary-color: #B1D0E0;
+    --color-button: #406882;
+} 
