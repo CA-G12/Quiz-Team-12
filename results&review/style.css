@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+:root {
+  --body-color: whitesmoke;
+  --main-color: #355764;
+  --secondary-color: #81CACF;
+  --color-button: #FFEA11;
+}
+
+/*start result-section */
+.result-section {
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  background-color: var(--body-color);
+}
+.score-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 100px;
+  background-color: var(--secondary-color);
+  border-radius: 50px;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  width: 65%;
+}
+.score-title {
+  color: var(--main-color);
+  font-size: 32px;
+  font-weight: bolder;
+  padding: 15px;
+}
+.score {
+  color: var(--main-color);
+  border-radius: 50px;
+  border: 2px solid transparent;
+  background-color: var(--body-color);
+  padding: 10px 20px;
+  font-weight: bolder;
+}
+.message-div {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between;
+  align-items: baseline; */
+}
+.message,
+.name {
+  font-size: 50px;
+  color: var(--main-color);
+  padding-bottom: 50px;
+  font-family: "Cairo", sans-serif;
+}
+
+.nav-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.review-btn,
+.exit-btn {
+  border-radius: 50px;
+  border: 2px solid transparent;
+  background-color: var(--color-button);
+  padding: 10px 130px;
+  font-weight: bolder;
+  margin-left: 20px;
+  color: var(--body-color);
+  font-size: 30px;
+}
+.exit-btn:hover,
+.review-btn:hover {
+  background-color: var(--secondary-color);
+}
+/*end result-section*/
+
+/*start review-section*/
+.review-section {
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--body-color);
+}
+.title{
+    padding-bottom: 20px;
+}
+
+.div-ques {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+
+}
+.quesWrong, .quesRight {
+  /* background-color: var(--secondary-color); */
+  border-radius: 50px;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  width: 46%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  text-align: center;
+  box-shadow: #b1d0e0;
+  box-sizing: border-box;
+}
+.quesRight{
+    background-color: green;
+}
+.quesWrong{
+    background-color: red;
+}
+
+/*end review-section */
