@@ -10,7 +10,6 @@ function addToLocalStorage(data) {
   }
   console.log(inpVul)
   location.assign('./qu/index.html')
-
   var data = document.querySelector('#registerSectionInput').value
   names = data
   localStorage.setItem('locName', JSON.stringify(names))
