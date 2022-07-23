@@ -1,21 +1,18 @@
-let s = document.querySelector('#registerSectionInputId')
-let nameValue = s.addEventListener('click', addToLocalStorage)
-let inpVul = document.querySelector('.registerSectionInput')
-let toQ = document.querySelector('.toQ')
-let names
+let top = JSON.parse(localStorage.getItem('arrWiner')); 
+console.log(top); 
 
-function addToLocalStorage(data) {
-  if (inpVul.value == '') {
-    return
-  }
-  console.log(inpVul)
-  location.assign('./qu/index.html')
-
-  var data = document.querySelector('#registerSectionInput').value
-  names = data
-  localStorage.setItem('locName', JSON.stringify(names))
-  console.log(names)
-  document.querySelector('#registerSectionInput').value = ''
-}
-
-// ./qu/index.html
+// function createRev(result) {
+//   top.forEach((el) => {
+//     console.log(el)
+//     // var newReview =`<h2 class = "ques">`+ el.question+`</h2>`;
+//     // review_div.innerHTML = newReview +  review_div.innerHTML;
+//     if (el.answer == 0) {
+//       var newReviewWrong = `<h2 class = "quesWrong">` + el.question + `</h2>`
+//       review_div.innerHTML = newReviewWrong + review_div.innerHTML
+//     } else {
+//       var newReviewRight = `<h2 class = "quesRight">` + el.question + `</h2>`
+//       review_div.innerHTML = newReviewRight + review_div.innerHTML
+//     }
+//   })
+// }
+// createRev(top)

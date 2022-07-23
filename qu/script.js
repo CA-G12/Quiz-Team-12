@@ -69,9 +69,7 @@ const option3 = document.querySelector('.option3')
 const option4 = document.querySelector('.option4')
 const nextBtn = document.querySelector('.nextBtn')
 let randomQuestion = data[Math.floor(Math.random() * data.length)]
-let scoreAnswer = JSON.parse(localStorage.getItem('scoreAnswer'))
-  ? +JSON.parse(localStorage.getItem('scoreAnswer'))
-  : []
+let scoreAnswer = 0
 let m = 0
 let counter = 1
 let result = []
@@ -94,35 +92,23 @@ let addAnswer = (e) => {
   result.push(objAnswer)
   localStorage.setItem('result', JSON.stringify(result))
 }
-let arrWiner = JSON.parse(localStorage.getItem('arrWiner'))
-  ? JSON.parse(localStorage.getItem('arrWiner'))
-  : []
-
 option1.addEventListener('click', addAnswer)
 option2.addEventListener('click', addAnswer)
 option3.addEventListener('click', addAnswer)
 option4.addEventListener('click', addAnswer)
 nextBtn.addEventListener('click', () => {
-  scoreAnswer = +scoreAnswer + +a
+  scoreAnswer += a
   localStorage.setItem('scoreAnswer', JSON.stringify(scoreAnswer))
   if (m == 0) {
     return
   }
   m = 0
   if (counter == 10) {
-    arrWiner = [
-      ...arrWiner,
-      {
-        nameWiner: JSON.parse(localStorage.getItem('locName')),
-        score: scoreAnswer,
-      },
-    ]
-    arrWiner = localStorage.setItem('arrWiner', JSON.stringify(arrWiner))
-
     location.assign('../results&review/index.html')
     return
   }
-
+  if (counter == 9) {
+  }
   counter++
   data = data.filter((item) => item.id != randomQuestion.id)
   score.textContent = counter
@@ -140,7 +126,7 @@ nextBtn.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', getTasksOnLoad)
 function getTasksOnLoad() {
   if (localStorage.getItem('result')) {
-    scoreAnswer = +JSON.parse(localStorage.getItem('scoreAnswer'))
+    scoreAnswer = JSON.parse(localStorage.getItem('scoreAnswer'))
     result = JSON.parse(localStorage.getItem('result'))
     let a = []
     for (let i = 0; i < result.length; i++) {

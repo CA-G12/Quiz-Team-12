@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+  font-weight: 600;
+
+}
+body {
+  background: var(--colo1r-button);
+}
+:root {
+  --body-color: whitesmoke;
+  --main-color: #312435;
+  --secondary-color: #d0a7dd;
+  --color-button: orange;
+  /* --colo1r-button: #e2edf5; */
+}
+
+/* Section one  */
+.landingPageSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+}
+/* .landingPageSectionHeader{
+    border-bottom: 2px solid goldenrod ;
+    padding: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--body-color);
+    color: var(--color-button);
+} */
+/* .quizSpan{
+    color: var(--secondary-color);
+    margin-left: 10px;
+} */
+/* .landingPageSectionHeaderH1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: var(--color-button);
+    font-size: 55px;
+} */
+.flexContant {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.howToPlay,
+.goodluck {
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--main-color);
+  margin-bottom: 20px;
+  font-family: cursive;
+  background-color: var(--color-button);
+  width: fit-content;
+  padding: 10px;
+  border-radius: 12px;
+}
+.detailsParagraph {
+  color: var(--main-color);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 55%;
+  background-color: var(--secondary-color);
+  margin: 30px;
+}
+
+.detailsP p {
+  margin: 10px;
+  font-size: 20px;
+  padding: 15px;
+  font-family: cursive;
+  font-weight: 600;
+}
+.detailsP p:nth-child(odd) {
+  background-color: var(--main-color);
+  color: var(--body-color);
+}
+.registerSection {
+  color: var(--main-color);
+  border-radius: 15px;
+  /* padding: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  max-width: 300px;
+  margin: 30px;
+}
+.logo {
+  width: 100%;
+}
+form {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input.registerSectionInput {
+  background-color: var(--body-color);
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: large;
+  width: 70%; 
+  color: var(--main-color);
+}
+.registerSectionH3 {
+  /* padding: 0 50px;  */
+}
+.registerSectionInput {
+  text-align: center;
+  margin: 0 20px;
+}
+.registerSectionButton {
+  /* margin: 10px; */
+}
+/* CSS */
+.button-46 {
+  align-items: center;
+  background-color: var(--color-button);
+  border: 2px solid var(--main-color);
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: var(--main-color);
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 28px;
+  max-width: 100%;
+  padding: 14px 22px;
+  text-decoration: none;
+  transition: all 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 70%;
+}
+
+.button-46:hover {
+  background-color: var(--color-button);
+  border-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .button-46 {
+    font-size: 20px;
+    min-width: 200px;
+    padding: 14px 16px;
+  }
+}
