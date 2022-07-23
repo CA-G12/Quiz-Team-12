@@ -39,6 +39,7 @@
 .welcome .content {
   display: flex;
   flex-direction: column;
+
 }
 .welcome .btn1,
 .welcome .btn2 {
@@ -47,7 +48,7 @@
   background-color: orange;
   padding: 10px 130px;
   font-weight: bolder;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   color: #312435;
   font-size: 20px;
   margin-bottom: 25px;
@@ -66,7 +67,7 @@
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: whitesmoke;
 
 
@@ -81,13 +82,15 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-bottom: 10px;
+  gap: 100px;
   
 }
 .leaderboard .cup{
   height: fit-content;
-  width: 90%;
-  margin-left: 150px;
+  width: 300px;
+  /* margin-left: 150px; */
   
 }
 .leaderboard .leaders{
@@ -98,7 +101,9 @@
 
 }
 .leaderboard .leader{
-  padding: 7px 200px; 
+  padding: 7px ; 
+  width: 300px;
+  text-align: center;
   background-color: orange;
   color: #312435;
   margin: 15px;
