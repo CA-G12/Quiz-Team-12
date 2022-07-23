@@ -135,7 +135,7 @@
     border-radius: 15px;
     box-sizing: border-box;
     color: var(--main-color);
-    margin-bottom: 20px;
+    margin: 20px;
     font-weight: 600;
     cursor: pointer;
     display: flex;

@@ -56,7 +56,7 @@ when the user enter the website landing page will show up landing page must the 
 * As a User, I should be able to see my score after finishing all of the questions.
 
 ## Link <span id="link"> </span>
-- You can visit our Website by [clicking here]()
+- You can visit our Website by [clicking here](https://ca-g12.github.io/Quiz-Team-12/)
 ## How do I get the project on my local machine?
 ### You can get the project in your local machine:-
 

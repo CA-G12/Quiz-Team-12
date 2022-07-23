@@ -81,6 +81,7 @@ body{
   background-color: var(--color-button);
   padding: 10px 100px;
   /* width:50%;  */
+  margin: 20px;
   font-weight: bolder;
   color: var(--main-color);
   font-size: 30px;
