@@ -82,7 +82,6 @@ body{
   padding: 10px 100px;
   /* width:50%;  */
   font-weight: bolder;
-  margin-left: 20px;
   color: var(--main-color);
   font-size: 30px;
   text-align: center;
@@ -144,5 +143,30 @@ body{
 .review-section .exit-btn{
   width: 100%;
 }
-
+@media (max-width: 768px) {
+  .result-section{
+    padding: 0;
+    margin: 25vh 20px;
+    padding-bottom: 10px;
+  }
+   .exit-btn {
+    margin: 5px 0 5px 0;
+    padding: 10px 10px;
+    width: 90%;
+  }
+  .review-section{
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .div-ques{
+    justify-content: center;
+    width: 100%;
+  }
+  .quesWrong{
+    width: 90%;
+    margin: 10px 0 ;
+  }
+}
 /*end review-section */

@@ -19,7 +19,6 @@
   
   /* Section one  */
   .landingPageSection {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,6 +135,7 @@
     border-radius: 15px;
     box-sizing: border-box;
     color: var(--main-color);
+    margin-bottom: 20px;
     font-weight: 600;
     cursor: pointer;
     display: flex;
@@ -157,11 +157,19 @@
     border-color: transparent;
   }
   
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     .button-46 {
       font-size: 20px;
       min-width: 200px;
       padding: 14px 16px;
+      margin-bottom: 20px;
+    }
+    .landingPageSection{
+      height: 100% !important;
+      
+    }
+    .detailsParagraph{
+      max-width: 90% !important;
     }
   }
   

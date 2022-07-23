@@ -14,6 +14,10 @@
   }
   body {
     background-color: var(--main-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .secQuestions {
     display: flex;
@@ -21,8 +25,8 @@
     justify-content: space-around;
     align-items: center;
     /* height: 100vh; */
-    margin: 80px 200px;
-    padding: 50px 100px;
+    /* margin: 80px 200px; */
+    padding: 50px;
     border-radius: 15px;
     background-color: var(--body-color);
   }
@@ -104,4 +108,12 @@
     (--main-color);
     color: var(--color-button); */
   }
-  
+  @media (max-width: 768px) {
+    .secQuestions{
+      margin: auto 10px;
+      padding: 10px 5px;
+    }
+    .artQuestion p{
+      padding: 15px 5px;
+    }
+  }
