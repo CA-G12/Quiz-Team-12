@@ -2,37 +2,41 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Cairo", sans-serif;
+  font-family: cursive;
 }
 :root {
   --body-color: whitesmoke;
-  --main-color: #355764;
-  --secondary-color: #81CACF;
-  --color-button: #FFEA11;
+  --main-color: #312435;
+  --secondary-color: #d0a7dd;
+  --color-button: orange;
+}
+body{
+  background-color: #312435;
+
 }
 
 /*start result-section */
 .result-section {
-  padding: 80px;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  align-content: center;
-  height: 100vh;
-  background-color: var(--body-color);
+  margin: 110px 250px;
+  padding: 50px 100px;
+  border-radius: 15px;
+  background-color: var(--secondary-color);
 }
 .score-bar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 100px;
-  background-color: var(--secondary-color);
-  border-radius: 50px;
+  margin-bottom: 40px;
+  background-color: var(--body-color);
+  border-radius: 15px;
   border: 2px solid transparent;
-  padding: 10px 20px;
-  width: 65%;
+  padding: 0 10px;
+  width: 100%;
 }
 .score-title {
   color: var(--main-color);
@@ -51,6 +55,7 @@
 .message-div {
   display: flex;
   flex-direction: row;
+  margin-bottom: 40px;
   /* justify-content: space-between;
   align-items: baseline; */
 }
@@ -58,46 +63,58 @@
 .name {
   font-size: 50px;
   color: var(--main-color);
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   font-family: "Cairo", sans-serif;
 }
 
 .nav-btns {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content:center;
+  align-items: center;
   flex-wrap: wrap;
 }
 .review-btn,
 .exit-btn {
-  border-radius: 50px;
+  border-radius: 15px;
   border: 2px solid transparent;
   background-color: var(--color-button);
-  padding: 10px 130px;
+  padding: 10px 100px;
+  /* width:50%;  */
   font-weight: bolder;
   margin-left: 20px;
-  color: var(--body-color);
+  color: var(--main-color);
   font-size: 30px;
+  text-align: center;
+  text-decoration: none;
 }
 .exit-btn:hover,
 .review-btn:hover {
-  background-color: var(--secondary-color);
+  border: 2px solid var(--main-color);
 }
 /*end result-section*/
 
 /*start review-section*/
 .review-section {
+  /* margin: 110px 250px;
   padding: 80px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  background-color: var(--body-color);
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 80px 250px;
+  padding: 50px 100px;
+  border-radius: 15px;
+  background-color: var(--body-color);  
+  color: var(--main-color);
 }
 .title{
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .div-ques {
@@ -108,7 +125,7 @@
 }
 .quesWrong, .quesRight {
   /* background-color: var(--secondary-color); */
-  border-radius: 50px;
+  border-radius: 15px;
   border: 2px solid transparent;
   padding: 10px 20px;
   width: 46%;
@@ -119,10 +136,13 @@
   box-sizing: border-box;
 }
 .quesRight{
-    background-color: green;
+    background-color: rgb(150, 219, 150);
 }
 .quesWrong{
-    background-color: red;
+    background-color: rgb(240, 147, 147);
+}
+.review-section .exit-btn{
+  width: 100%;
 }
 
 /*end review-section */
